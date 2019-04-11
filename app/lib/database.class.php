@@ -4,8 +4,8 @@ use PDO;
 
 class Database {
 
-  private static $instance = null;  //instancia(objecte) de la pròpia classe
-  private $pdo;    //connexió a la base de dades
+  private static $instance = null;  //Intancia del objeto
+  private $pdo;    //conexion a la base de datos
   private $host = BIB_HOST;  
   private $user = BIB_USER;  
   private $pass = BIB_PASS;     
@@ -19,7 +19,7 @@ class Database {
   }
 
   public static function getInstance() {
-    // torna la instància, si aquesta no està creada la crea  
+    // da la instancia y si no existe la crea
     if(!self::$instance) { 
         self::$instance = new Database();  
     }

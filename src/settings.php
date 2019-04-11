@@ -6,13 +6,13 @@ return [
 
         // Renderer settings
         'renderer' => [
-            'template_path' => __DIR__ . '/../templates/',
+            'template_path' => '/var/docker-compose-lamp/www' . '/../templates/',
         ],
 
         // Monolog settings
         'logger' => [
             'name' => 'slim-app',
-            'path' => isset($_ENV['docker']) ? 'php://stdout' : __DIR__ . '/../logs/app.log',
+            'path' => isset($_ENV['docker']) ? 'php://stdout' : '/var/docker-compose-lamp/www' . '/../logs/app.log',
             'level' => \Monolog\Logger::DEBUG,
         ],
     ],

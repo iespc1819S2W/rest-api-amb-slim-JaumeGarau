@@ -1,5 +1,5 @@
 <?php
-$base = __DIR__ . '/../app/';
+$base = '/var/docker-compose-lamp/www' . '/../app/';
 
 $folders = [
     'config',

@@ -1,6 +1,6 @@
 <?php
     define("BIB_USER", "root");
-    define("BIB_PASS", "");
-    define("BIB_BBDD", "bioblioteca");
-    define("BIB_HOST", "127.0.0.1");
+    define("BIB_PASS", "tiger"); //tiger
+    define("BIB_BBDD", "base1");
+    define("BIB_HOST", "mysql"); //mysql
 ?>
